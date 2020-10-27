@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+   <div class="container-fluid">
+       <div class="row d-flex justify-content-center ">
+            <div class="col-lg-3 col-sm-12 col-md-3" id="one" style="background-color: rgb(2, 2, 2);">
+                <div class="row d-flex justify-content-center">
+                    <div id="countdown"></div>
+                    <div id="finish"></div>
+                        <script type=text/javascript>countDown(10, "countdown")</script>
+                </div>    
+            </div>
+           <div class="col-lg-7 col-sm-12 col-md-7  " id="two" style="background-color: rgb(0, 0, 0);">
+
+                <p id="question">Q1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?
+                </p>
+
+                <!-- <img src="ques.jpg" class="responsive" width="600" height="400"> -->
+                
+                <form>
+                    <div class="form-row d-flex justify-content-center">
+                        <input type="text" placeholder="Answer">
+                    </div>
+                    <div class="form-row d-flex justify-content-center">
+                        <button id="btn" >Submit</button>
+                        
+                    </div>     
+                </form>
+
+            </div>
+       </div>
+   </div>
+</body>
+</html>
