@@ -8,14 +8,14 @@
 
 #question{
     margin-top: 3%;
-    font-size: 1.8vw;
+    font-size:2vw;
     color:white;
     
 }
 
 #two{
     
-    min-height: 400px;
+    min-height: auto;
     
     
 }
@@ -25,9 +25,9 @@ input{
     border:none;
     outline:none;
     background: inherit;
-    font-size:1.8vw;
+    font-size:2vw;
     border-bottom: 2px solid #15f4ee;
-    margin-top:4%;
+    margin-top:6%;
     color:white;
     text-transform: uppercase;
 
@@ -37,7 +37,8 @@ input{
     display: block;
     width:100%;
     max-width: 25vw;
-    height:50%;
+    /* min-width: 6vw; */
+    max-height:40%;
     margin-left:auto;
     margin-right: auto;
     /* border:1px solid #15f4ee; */
@@ -55,7 +56,7 @@ input{
 #btn{
     width:40%;
     padding:1.5%;
-    margin-top:4%;
+    margin-top:7%;
     margin-bottom: 10%;
     background: black;
     color:#15f4ee;
@@ -75,7 +76,12 @@ input{
     box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
     text-shadow: 0  0 5px black,0 0  5px black;
     /* background-color: black; */
-    
+ 
+}
+
+#inner{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #countdown{
@@ -97,20 +103,76 @@ input{
         color:blue
     }
 } */
-/* 
-@media screen and (min-width: 992px) {
-    #question{
-        text-align:justify;
-        margin-top: 3%;
-        font-size: 1.5vw;
-        color:white; 
+
+@media screen and (min-width:768px){
+    #one{
+        border-top-left-radius:30px;
+        border-bottom-left-radius:30px;
     }
 
+    #two{
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
 
-  }
+
+@media screen and (max-width:767.9px){
+    #one{
+        border-top-left-radius:30px;
+        border-top-right-radius: 30px;
+    }
+
+    #two{
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+/* @media screen and (min-width:992px){
+    #question{
+        font-size: 25px;
+    }
+
+    #input{
+        font-size: 30px;
+    }
+    #two{
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width:991px){
+    #question{
+        font-size: 17px;
+    }
+
+    #input{
+        font-size: 17px;
+    }
+
+    #two{
+        min-height: 530px;
+    }
+}
+
+@media screen and (max-width:767px){
+    #question{
+        font-size: 15px;
+    }
+
+    #input{
+        font-size: 15px;
+    }
+
+    #two{
+        min-height: 550px;
+    }
+} */
+
   
   
-  @media screen and (max-width: 991.5px) {
+  /* @media screen and (max-width: 991.5px) {
     #question{
         text-align:justify;
         margin-top:3%;
@@ -133,4 +195,4 @@ input{
         font-size: 80px;
     }
 
-  } */
+  }  */
