@@ -1,36 +1,44 @@
 html{
-    min-height: 100%;
+    min-height: 104%;
 }
 body{
     /* font-family: Copperplate, "Copperplate Gothic Light";
     font-variant: small-caps;  */
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     /* background-color: #ffffff; */
-    background: linear-gradient(0deg,#47d6d6, #a1f7f2, #c0d8d7);
+    background: linear-gradient(0deg,#1a7979, #31918c, #c0d8d7);
+    /* overflow: hidden; */
     
 
 }
 
 .row{
-    margin-top:5%;
+    margin-top:1%;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 2.5%;
+    
+    
     /* box-shadow:0 0 20px 7px #058d97; */
     
 }
 
+#inner{
+    margin-top:10px;
+}
 
 #question{
-    margin-top: 1%;
-    font-size:2vw;
+    margin-top:3%;
+    font-size:1.5vw;
     color:white;
     
 }
 
 #two{
     
-    min-height:auto;
+    /* min-height:auto; */
     min-height: auto;
+    /* border:1px solid white; */
     
     
 }
@@ -42,7 +50,7 @@ input{
     background: inherit;
     font-size:2vw;
     border-bottom: 2px solid #058d97;
-    margin-top:6%;
+    margin-top:4%;
     color:white;
     /* text-transform: uppercase; */
 
@@ -53,12 +61,12 @@ input{
     width:100%;
     max-width: 25vw;
     /* min-width: 6vw; */
-    max-height:40%;
-    margin-left:auto;
+    max-height:45%;
+    /* margin-left:auto; */
     margin-right: auto;
     /* border:1px solid #15f4ee; */
     padding:0.3vw;
-    background: linear-gradient(215deg,#000000, #0c4441, #0ca09b);
+    background: linear-gradient(215deg,#000000, #0c4441, #066e6b);
     
 }
 
@@ -71,8 +79,8 @@ input{
 #btn{
     width:40%;
     padding:1.5%;
-    margin-top:7%;
-    margin-bottom: 10%;
+    margin-top:4%;
+    margin-bottom: 2%;
     background: inherit;
     color:#76d3da;
     border:2px solid #058d97;
@@ -101,15 +109,23 @@ input{
 #countdown{
     margin:0px;
     /* padding:100px; */
-    font-size:9vw;
+    font-size:8.5vw;
     text-align: center;
-    padding:10%;
+    /* padding:5%; */
     color:white;
     font-family: Copperplate, "Copperplate Gothic Light";
     /* margin-top:15px; */
     /* border:1px solid black; */
     
 }
+
+footer{
+    background-color:  rgba(0,0,0,1);
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    }
+
 
 
 /* @media  screen and  (max-device-width : 768px) {
@@ -148,77 +164,25 @@ input{
     
     input{
         font-size:17px;
+        width: 70%;
     }
     #countdown{
         font-family: Copperplate, "Copperplate Gothic Light";
-
-    }
-}
-
-/* @media screen and (min-width:992px){
-    #question{
-        font-size: 25px;
+        padding:3%;
     }
 
-    #input{
-        font-size: 30px;
+    #responsive{
+        max-width: 60vw;
     }
-    #two{
-        min-height: 300px;
-    }
-}
-
-@media screen and (max-width:991px){
-    #question{
-        font-size: 17px;
-    }
-
-    #input{
-        font-size: 17px;
-    }
-
-    #two{
-        min-height: 530px;
-    }
-}
-
-@media screen and (max-width:767px){
-    #question{
-        font-size: 15px;
-    }
-
-    #input{
-        font-size: 15px;
-    }
-
-    #two{
-        min-height: 550px;
-    }
-} */
-
-  
-  
-  /* @media screen and (max-width: 991.5px) {
-    #question{
-        text-align:justify;
-        margin-top:3%;
-        font-size: 15px;
-        color:blue;   
-    }
-
-    input{
-        font-size:15px;
-        margin-top:30px;
-    }
-
+    
     #btn{
-        font-size: 15px;
-        letter-spacing: 1px;
-        margin-bottom: 20px;
+        margin-bottom: 5%;
     }
 
-    #countdown{
-        font-size: 80px;
+    #footer{
+        margin-top:52px;
     }
 
-  }  */
+}
+
+
