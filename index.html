@@ -10,7 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
     <script src="script.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
@@ -31,12 +32,9 @@
                         <div class="col-lg-12" id="inner" style="background-color: black;">
                             <div id="countdown"></div>
                             <div id="finish"></div>
-                            <script type=text/javascript>countDown(10, "countdown")</script>
+                            <script type=text/javascript>countDown(30, "countdown")</script>
                         </div>
                     </div>
-                    <div id="countdown"></div>
-                    <div id="finish"></div>
-                        <script type=text/javascript>countDown(10, "countdown")</script>
                 </div>    
             </div>
            <div class="col-lg-7 col-12 col-md-7  " id="two" style="background-color: rgb(9, 40, 49);">
@@ -47,10 +45,10 @@
                 <img src="ques.jpg"  class="img-fluid" id="responsive" width="600" height="400">
                 
                 <form>
-                    <div class="form-row d-flex justify-content-start">
+                    <div class="form-row d-flex" id="field">
                         <input type="text" placeholder="Answer">
                     </div>
-                    <div class="form-row d-flex justify-content-start">
+                    <div class="form-row d-flex" id="field">
                         <button id="btn" >Submit</button>
                         
                     </div>     
