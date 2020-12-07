@@ -5,16 +5,21 @@ body{
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     background: linear-gradient(0deg,#1a7979, #31918c, #c0d8d7);
     /* overflow: hidden; */
+    /* font-family: 'IM Fell DW Pica', serif; */
+    /* font-family: 'BenchNine', sans-serif; */
+    font-family: 'Gruppo', cursive;
+    /* letter-spacing: 1px; */
+    position: relative;        
+    min-height: 100%;        
+    padding-bottom: 6rem; 
     
 
 }
 
 .row{
     margin-top:2%;
-    /* margin-bottom: auto; */
     margin-left: 2%;
     margin-right: 2%;
-    /* margin-bottom: %; */  
 }
 
 #inner{
@@ -22,20 +27,16 @@ body{
 }
 
 #question{
-    margin-top:1.5%;
+    margin-top:15px;
     font-size:1.5vw;
     color:white;
     
 }
 
 #two{
-    
-    /* min-height:auto; */
     min-height: auto;
-    /* border:1px solid white; */
-    
-    
 }
+
 input{
     width: 50%;
     height: 100%;
@@ -46,37 +47,26 @@ input{
     border-bottom: 2px solid #058d97;
     margin-top:4%;
     color:white;
-    /* text-transform: uppercase; */
-
 }
 
 #responsive{
     display: block;
     width:100%;
     max-width: 25vw;
-    /* min-width: 6vw; */
     max-height:45%;
-    /* margin-left:auto; */
     margin-right: auto;
-    /* border:1px solid #15f4ee; */
     padding:0.3vw;
     background: linear-gradient(215deg,#000000, #0c4441, #066e6b);
     
 }
-
-
-
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: white;
-   }
 
 #btn{
     width:40%;
     padding:1.5%;
     margin-top:4%;
     margin-bottom: 3.5%;
-    background: inherit;
-    color:#76d3da;
+    background: #058d97;
+    color:#000000;
     border:2px solid #058d97;
     font-style: unset;
     letter-spacing: 2%;
@@ -85,39 +75,39 @@ input{
     transition: 0.6s; 
     border-radius: 50px;
     outline: none;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-
+    font-weight: bold;
 }
 
 #btn:hover{
     box-shadow: 0 5px 30px 0 #36aab3 inset, 0 5px 30px 0 #36aab3,0 5px 50px 0 #36aab3 inset, 0 5px 30px 0 #36aab3;
     text-shadow: 0  0 5px black,0 0  5px black;
- 
 }
 
 #inner{
     margin-top: 15px;
-    /* margin-bottom:0px; */
+    background: linear-gradient(45deg,#013131, #0a6965, #0ab1a8);
+    width: 100%;
 }
 
 #countdown{
     margin:0px;
-    /* padding:100px; */
     font-size:7vw;
     text-align: center;
-    /* padding:5%; */
-    color:white;
-    /* font-family: Copperplate, "Copperplate Gothic Light"; */
-    font-family: 'Orbitron', sans-serif;
+    color:rgb(0, 0, 0);
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'IM Fell DW Pica', serif;
+    /* font-family: 'Life Savers', cursive; */
+    
 }
 
-footer{
-    background-color:  rgba(0,0,0,1);
-    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    font-size: 1.25rem;
-    text-align: center;
+.fixed-bottom{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left:0;
+        z-index: 1030;
+        margin-top: 10px;
     }
-
 
 @media screen and (min-width:768px){
     #one{
@@ -151,8 +141,9 @@ footer{
     }
     
     input{
+        margin-top: 10%;
         font-size:17px;
-        width: 70%;
+        width: 80%;
     }
     #countdown{
         padding:3%;
@@ -169,14 +160,15 @@ footer{
         margin-bottom: 10%;
     }
 
-    footer{
-        margin-top:10px;
+    .fixed-bottom{
+        margin-top: 10px;
     }
 
     #field{
         display: flex;
         justify-content: center;
     }
+
 
 }
 
