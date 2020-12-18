@@ -3,7 +3,11 @@ html{
 }
 body{
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    background: linear-gradient(0deg,#1a7979, #31918c, #c0d8d7);
+    background: url('quizbg.PNG') no-repeat;
+    width: 100%;
+    
+    background-position: center;
+    background-size: cover;
     /* overflow: hidden; */
     /* font-family: 'IM Fell DW Pica', serif; */
     /* font-family: 'BenchNine', sans-serif; */
@@ -11,7 +15,7 @@ body{
     /* letter-spacing: 1px; */
     position: relative;        
     min-height: 100%;        
-    padding-bottom: 6rem; 
+    padding-bottom: 14rem; 
     
 
 }
@@ -22,19 +26,23 @@ body{
     margin-right: 2%;
 }
 
-#inner{
-    margin-top:10px;
-}
 
 #question{
     margin-top:15px;
-    font-size:1.5vw;
+    font-size:1.3vw;
     color:white;
     
 }
 
+#one{
+    background-color: rgb(0, 0, 0);
+    /* opacity: 0.7; */
+}
+
 #two{
     min-height: auto;
+    background-color: rgb(0, 0, 0);
+    /* opacity: 0.7; */
 }
 
 input{
@@ -44,7 +52,7 @@ input{
     outline:none;
     background: inherit;
     font-size:2vw;
-    border-bottom: 2px solid #058d97;
+    border-bottom: 2px solid #972e05;
     margin-top:4%;
     color:white;
 }
@@ -52,11 +60,14 @@ input{
 #responsive{
     display: block;
     width:100%;
-    max-width: 25vw;
-    max-height:45%;
+    max-width: 20vw;
+    max-height:100%;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding:0.3vw;
-    background: linear-gradient(215deg,#000000, #0c4441, #066e6b);
+    background: linear-gradient(215deg,#7a2808, #2c1404, #012855);
+    opacity: inherit;
     
 }
 
@@ -65,9 +76,9 @@ input{
     padding:1.5%;
     margin-top:4%;
     margin-bottom: 3.5%;
-    background: #058d97;
+    background: #972e05;
     color:#000000;
-    border:2px solid #058d97;
+    border:2px solid #972e05;
     font-style: unset;
     letter-spacing: 2%;
     font-size:100%;
@@ -76,16 +87,17 @@ input{
     border-radius: 50px;
     outline: none;
     font-weight: bold;
+    
 }
 
 #btn:hover{
-    box-shadow: 0 5px 30px 0 #36aab3 inset, 0 5px 30px 0 #36aab3,0 5px 50px 0 #36aab3 inset, 0 5px 30px 0 #36aab3;
-    text-shadow: 0  0 5px black,0 0  5px black;
+    box-shadow: 0 5px 30px 0 #972e05 inset, 0 5px 30px 0 #972e05,0 5px 50px 0 #972e05 inset, 0 5px 30px 0 #972e05;
+    text-shadow: 0  0 2px black,0 0  5px black;
 }
 
 #inner{
     margin-top: 15px;
-    background: linear-gradient(45deg,#013131, #0a6965, #0ab1a8);
+    /* background: linear-gradient(45deg,#ac8165, #436797, #435896); */
     width: 100%;
 }
 
@@ -93,7 +105,7 @@ input{
     margin:0px;
     font-size:7vw;
     text-align: center;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     /* font-family: 'Orbitron', sans-serif; */
     font-family: 'IM Fell DW Pica', serif;
     /* font-family: 'Life Savers', cursive; */
@@ -101,7 +113,7 @@ input{
 }
 
 .fixed-bottom{
-        position: absolute;
+        position: fixed;
         right: 0;
         bottom: 0;
         left:0;
