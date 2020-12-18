@@ -107,7 +107,8 @@ input{
     text-align: center;
     color:rgb(255, 255, 255);
     /* font-family: 'Orbitron', sans-serif; */
-    font-family: 'IM Fell DW Pica', serif;
+/*     font-family: 'IM Fell DW Pica', serif; */
+    font-family: 'JetBrains Mono', monospace;
     /* font-family: 'Life Savers', cursive; */
     
 }
