@@ -49,6 +49,7 @@ a.abs{
     text-decoration: none;
     color:white;
     font-size:18px;
+    overflow: hidden;
     
 }
 
@@ -127,6 +128,10 @@ input{
         margin-top: 10px;
     }
 
+#footer{
+    font-size: 18px;
+}
+
 @media screen and (min-width:768px){
     #one{
         border-top-left-radius:30px;
@@ -158,6 +163,13 @@ input{
         
     }
     
+    .abs {
+        font-size: 10px;
+    }
+
+    #footer{
+        font-size: 10px;
+    }
     input{
         margin-top: 10%;
         font-size:17px;
