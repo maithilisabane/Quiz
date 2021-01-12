@@ -10,38 +10,71 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Life+Savers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color: black; font-family:'Times New Roman', Times, serif;opacity: 1;height: 7vh;">
+        <a class="navbar-brand" href="#">
+          <img src="crewhite.png" width="90" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        
+        <a class="navbar-brand ml-auto" style="font-family: 'Gruppo', cursive; font-weight: bold;" >BIZ TECH</a>
+        <a class="navbar-brand ml-auto" href="#">
+            <img src="pisb2.png" width="90" height="30" class="d-inline-block align-top" alt="">
+          </a>
+    </nav>
+    
    <div class="container-fluid">
-       <div class="row d-flex justify-content-center ">
-            <div class="col-lg-3 col-sm-12 col-md-3" id="one" style="background-color: rgb(2, 2, 2);">
-                <div class="row d-flex justify-content-center">
-                    <div id="countdown"></div>
-                    <div id="finish"></div>
-                        <script type=text/javascript>countDown(10, "countdown")</script>
-                </div>    
+       <div class="row d-flex justify-content-center" id="main_row" style="padding-top: 20px;">
+            <div class="col-lg-2 col-12 col-md-3" id="one">
+                            <div id="countdown"></div>
+                            <div id="finish"></div>
+                            <script type=text/javascript>countDown(30, "countdown")</script>
+   
             </div>
-           <div class="col-lg-7 col-sm-12 col-md-7  " id="two" style="background-color: rgb(0, 0, 0);">
-
-                <p id="question">Q1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?
-                </p>
-
-                <!-- <img src="ques.jpg" class="responsive" width="600" height="400"> -->
-                
-                <form>
-                    <div class="form-row d-flex justify-content-center">
-                        <input type="text" placeholder="Answer">
+           <div class="col-lg-8 col-12 col-md-7 " id="two" >
+                <div class="row" id="ques" >
+                    <div class="col-lg-12">
+                        <p id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio illo laudantium sint cupiditate corrupti maxime commodi repellendus, optio facilis ullam aliquam neque architecto. Laborum ea natus tempore odio perspiciatis?
+                        </p>
                     </div>
-                    <div class="form-row d-flex justify-content-center">
-                        <button id="btn" >Submit</button>
-                        
-                    </div>     
-                </form>
+                </div>
 
+                <div class="row no-gutters">
+                    <div class="col-lg-12">
+                        <img src="ques.jpg"  class="img-fluid" id="responsive" width="600" height="400">
+                    </div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="col-lg-12">
+                        <form>
+                            <div class="form-row">
+                                <input type="text" placeholder="Answer" id="field">
+                                <button id="btn" >Submit</button>
+                            </div>     
+                        </form>
+                    </div>
+                </div>   
             </div>
-       </div>
+        </div>
    </div>
+
+   
+   <nav class="navbar navbar-expand-lg justify-content-center navbar-dark fixed-bottom" style="background-color: black;">
+    <a class="navbar-brand mc-auto " id="footer">&copy PICT IEEE Student Branch | Developed by PISB<a class="abs" href="abs.html">Web Team</a></a>
+    </nav>
+
 </body>
 </html>
