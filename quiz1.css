@@ -1,9 +1,9 @@
 html{
-    height: 100vh;
+    max-height: 100vh;
 }
 body{
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    background-image: url('puz.jpg');
+    background-image: url('puz.png');
     background-repeat: repeat;
     /* background-color: rgb(155, 219, 211); */
     width: 100%;
@@ -135,6 +135,7 @@ input{
 @media screen and (max-width:767.9px){
 
     body{
+        /* background-image: url(puz1.png); */
         background-position: center;
         background-size: cover;
         background-repeat: repeat;
@@ -186,6 +187,13 @@ input{
     .form-row{
         display: flex ;
         justify-content: center;
+    }
+
+    #brand{
+        padding: 0px;
+        margin: 0px;
+        width: 15vw;
+        height: 10vw;
     }
 
 }
