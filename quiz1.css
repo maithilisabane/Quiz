@@ -14,6 +14,9 @@ body{
     min-height: 100%;
     /* overflow:hidden; */
 }
+#ourteam{
+    font-size: 1.5vw;
+}
 
 .row{
     margin-top:3%;
@@ -52,8 +55,8 @@ a.abs{
     color:white;
     font-size:18px;
     overflow: hidden;
-    border:1px solid white;
-    padding:1px;
+    /* border:1px solid white; */
+    /* padding:1px; */
 }
 
 input{
@@ -196,6 +199,14 @@ input{
         height: 10vw;
     }
 
+    #logo_pisb{
+        display:none;
+    }
+
+    #ourteam{
+        font-size:17px;
+    }
+
 }
 
 #field{
@@ -209,3 +220,4 @@ input{
 .container-fluid{
     height:80vh;
 }
+
